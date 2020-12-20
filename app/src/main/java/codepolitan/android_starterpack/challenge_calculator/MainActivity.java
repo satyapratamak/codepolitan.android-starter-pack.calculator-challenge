@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String strNumber2 = etNumber2.getText().toString();
                 double dblResult = 0;
 
-                if (strNumber1 != " " && strNumber2 != " "){
+                if (strNumber1.trim().length()!=0 && strNumber2.trim().length()!=0){
                     dblResult = Double.parseDouble(strNumber1) * Double.parseDouble(strNumber2);
                 }
                 tvResult.setText(String.valueOf(dblResult));
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 String strNumber2 = etNumber2.getText().toString();
                 double dblResult = 0;
 
-                if (strNumber1 != " " && strNumber2 != " "){
+                if (strNumber1.trim().length()!=0 && strNumber2.trim().length()!=0){
                     dblResult = Double.parseDouble(strNumber1) / Double.parseDouble(strNumber2);
                 }
                 tvResult.setText(String.valueOf(dblResult));
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         String strNumber2 = etNumber2.getText().toString();
         double dblResult = 0;
 
-        if (strNumber1 != " " && strNumber2 != " "){
+        if (strNumber1.trim().length()!=0 && strNumber2.trim().length()!=0){
             dblResult = Double.parseDouble(strNumber1) + Double.parseDouble(strNumber2);
         }
         tvResult.setText(String.valueOf(dblResult));
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         String strNumber2 = etNumber2.getText().toString();
         double dblResult = 0;
 
-        if (strNumber1 != " " && strNumber2 != " "){
+        if (strNumber1.trim().length() != 0 && strNumber2.trim().length()!=0){
             dblResult = Double.parseDouble(strNumber1) - Double.parseDouble(strNumber2);
         }
         tvResult.setText(String.valueOf(dblResult));
